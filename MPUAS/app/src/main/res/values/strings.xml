@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">ManhwaQ</string>
+    <string name="manhwa_name">Nama Manhwa</string>
+    <string name="description">Deskripsi</string>
+    <string name="share">Share</string>
+    <string name="menu_about">About Us</string>
+
+    <string name="your_name">Raffi Argianda</string>
+    <string name="your_nim">221351112</string>
+    <string name="your_class">Malam B</string>
+    <string name="my_name">Rizky Syahrul Maulid</string>
+    <string name="my_nim">221351134</string>
+    <string name="my_class">Malam B</string>
+
+    <string name="manhwa_image">Image of a Manhwa</string>
+
+    <string-array name="data_name">
+        <item>Yeonwoo Innocent</item>
+        <item>Operation: True Love</item>
+        <item>Clothing Bin of Love</item>
+        <item>Meet Me in the Middle</item>
+        <item>Couple Breaker</item>
+        <item>Like Mother, Like Daughter</item>
+        <item>My Lucky Strike</item>
+        <item>In Between</item>
+        <item>Bad Word Baby</item>
+        <item>Good / Bad Fortune</item>
+    </string-array>
+
+    <string-array name="data_genre">
+        <item>Genre : Romance, School Life, Drama </item>
+        <item>Genre : Romance, Drama, Slice of Life</item>
+        <item>Genre : Romance, School Life, Drama </item>
+        <item>Genre : Romance, Comedy</item>
+        <item>Genre : Romance, Drama, Comedy </item>
+        <item>Genre : Thriller, Drama, Mystery, Horror</item>
+        <item>Genre : Romance, Drama </item>
+        <item>Genre : Romance, Drama </item>
+        <item>Genre : Romance, Slice of Life </item>
+        <item>Genre : Fantasy, Drama</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/yeonwoo</item>
+        <item>@drawable/truelove</item>
+        <item>@drawable/clothingbinoflove</item>
+        <item>@drawable/meetmeinthemiddle</item>
+        <item>@drawable/couplebreaker</item>
+        <item>@drawable/likemotherlikedaughter</item>
+        <item>@drawable/luckystrike</item>
+        <item>@drawable/inbetween</item>
+        <item>@drawable/badwordbaby</item>
+        <item>@drawable/goodbadfortune</item>
+    </integer-array>
+
+    <string-array name="data_deskripsi">
+
+        <item>
+            "Yeonwoo's Innocence" adalah sebuah manhwa romantis yang menceritakan tentang Yeonwoo,
+            seorang siswa yang memiliki penampilan lembut dan mungil sehingga sering disangka sebagai siswi.
+            Dia memiliki perasaan terhadap Haesol Kang, siswa terpopuler di sekolahnya. Namun, karena kepribadiannya yang malu-malu dan pemalu,
+            Yeonwoo belum pernah berbicara dengan Haesol meskipun mereka adalah teman sekelas.
+        </item>
+
+        <item>
+            "Operation: True Love" adalah manhwa yang berpusat pada Su-ae Shim, seorang gadis yang merasa hubungan dengan pacarnya, Minu Kang, sangat acuh tak acuh.
+            Hidupnya berubah ketika dia menemukan ponsel ajaib bernama Jellypop yang memberinya wawasan tentang kehidupan cintanya.
+            Saat Su-ae semakin menjauh dari Minu, dia mulai mendekati teman Minu, Eunhyeok, dan mencurigai ada hubungan lebih antara Minu dan kakak iparnya, Ra-im.
+
+        </item>
+
+        <item>
+            "Clothing Bin of Love" adalah manhwa yang menceritakan tentang Song Aram, seorang siswa yang hanya peduli pada nilai dan uang.
+            Kehidupan Aram berubah ketika dia bertemu dengan Jung Jinwoo, seorang siswa populer di sekolahnya.
+            Legenda mengatakan bahwa kotak pakaian bekas dapat mengungkap perasaan seseorang jika Anda memberikan uang dan mengucapkan nama orang yang Anda suka.
+        </item>
+
+        <item>
+            "Meet Me in the Middle" adalah manhwa romantis yang menceritakan tentang Yeorum, seorang wanita berusia 30 tahun yang menjalani hidup dengan membosankan, dan Jisung, seorang pria muda misterius yang muncul di hadapannya.
+            Mereka bertemu melalui aplikasi dating dengan saling mengganti umur aslinya, dan cerita berjalan dengan banyak kejutan dan lucu.
+        </item>
+
+        <item>
+            "Couple Breaker" adalah manhwa yang menceritakan tentang dua pasangan yang harus bersaing dalam sebuah acara TV untuk cinta dan uang.
+            Namun, mereka harus melakukan sesuatu yang tidak terduga: menukar pasangan sebelum memulai acara tersebut. Cerita ini penuh dengan drama, kejutan, dan konflik romantis.
+        </item>
+
+        <item>
+            "Like Mother, Like Daughter" adalah manhwa yang mengisahkan tentang hubungan yang tegang antara seorang ibu dan putrinya.
+            Cerita ini berputar di sekitar konflik emosional dan rahasia gelap yang muncul dari masa lalu keluarga mereka. Sang putri mulai menyelidiki misteri di sekitar ibunya, yang mengarah pada serangkaian kejadian yang menakutkan dan mengejutkan.
+        </item>
+
+        <item>
+            My Lucky Strike adalah manhwa yang menceritakan tentang Gong Siru, seorang mahasiswa yang setelah mabuk mendapati dirinya mencium seorang pria tetapi tidak dapat mengingat siapa pria itu.
+            Keesokan harinya, ia menemukan bahwa dua pria di kelasnya, Seol Gibaek dan Jo Cheong, memiliki luka di bibir yang sama. Dengan Gibaek sebagai senior yang tampan dan ramah, dan Cheong sebagai teman sekelas yang cool dan menarik,
+            Siru harus mengungkap misteri ini sambil menghadapi dilema cinta segitiga.
+        </item>
+
+        <item>
+            In Between adalah manhwa romantis yang menceritakan hubungan antara Kang Sihwa dan Lee Eunseo. Sihwa adalah teman sejak kecil yang selalu menarik perhatian semua orang, sementara Eunseo adalah teman dekatnya yang sering cemburu.
+            Ketika Eunseo secara spontan mengajak Sihwa berpacaran, hubungan mereka menjadi canggung dan Sihwa akhirnya pindah ke luar negeri. Beberapa tahun kemudian, Sihwa kembali dan membuat hati Eunseo bergejolak dengan perilakunya yang tak bisa ditebak.
+        </item>
+
+        <item>
+            Bad Word Baby adalah webtoon yang mengisahkan tentang Naren, seorang anak konglomerat yang memilih untuk menyembunyikan identitasnya sebagai pewaris keluarga kaya.
+            Ia mencoba menjalani kehidupan kampus layaknya mahasiswa biasa, jauh dari kemewahan dan sorotan. Webtoon ini menggabungkan elemen slice of life dan romance, mengeksplorasi perjuangan Naren dalam menyeimbangkan kehidupannya yang penuh rahasia dengan hubungan dan persahabatan barunya.
+        </item>
+
+        <item>
+           Good / Bad Fortune adalah webtoon yang menceritakan tentang dua remaja, Areka Putra dan Aya Putriani, yang masing-masing memiliki kemampuan unik: Areka dapat membawa keberuntungan, sementara Aya dapat membawa kesialan.
+            Cerita ini mengeksplorasi kehidupan mereka yang penuh dengan kejutan dan konflik, serta bagaimana kekuatan mereka mempengaruhi hubungan mereka satu sama lain dan orang-orang di sekitar mereka.
+        </item>
+
+    </string-array>
+
+    <string-array name="data_penulis">
+        <item>Author : Esol</item>
+        <item>Author : kkokkalee, Dledumb</item>
+        <item>Author : Going</item>
+        <item>Author : Alex Light</item>
+        <item>Author : KMK, Taegeon</item>
+        <item>Author : YIDAHM</item>
+        <item>Author : bakSSdam</item>
+        <item>Author : HBCUL8ER</item>
+        <item>Author : El Nareswara</item>
+        <item>Author : Ariel Duyung</item>
+    </string-array>
+
+    <string-array name="data_rating">
+        <item>Rating : 8.5 / 10</item>
+        <item>Rating : 7.8 / 10</item>
+        <item>Rating : 7.5 / 10</item>
+        <item>Rating : 8 / 10</item>
+        <item>Rating : 7 / 10</item>
+        <item>Rating : 8.2 / 10</item>
+        <item>Rating : 7.5 / 10</item>
+        <item>Rating : 7.2 / 10</item>
+        <item>Rating : 8 / 10</item>
+        <item>Rating : 7.5 / 10</item>
+    </string-array>
+
+    <integer-array name="data_chapter_yeonwoo">
+        <item>@drawable/yeonwoo1</item>
+        <item>@drawable/yeonwoo2</item>
+        <item>@drawable/yeonwoo3</item>
+        <item>@drawable/yeonwoo4</item>
+        <item>@drawable/yeonwoo5</item>
+        <item>@drawable/yeonwoo6</item>
+        <item>@drawable/yeonwoo7</item>
+        <item>@drawable/yeonwoo8</item>
+        <item>@drawable/yeonwoo9</item>
+        <item>@drawable/yeonwoo10</item>
+        <item>@drawable/yeonwoo11</item>
+    </integer-array>
+
+
+
+    <integer-array name="data_chapter_operation_true_love">
+        <item>@drawable/truelove1</item>
+        <item>@drawable/truelove2</item>
+        <item>@drawable/truelove3</item>
+        <item>@drawable/truelove4</item>
+        <item>@drawable/truelove5</item>
+        <item>@drawable/truelove6</item>
+        <item>@drawable/truelove7</item>
+        <item>@drawable/truelove8</item>
+        <item>@drawable/truelove9</item>
+        <item>@drawable/truelove10</item>
+        <item>@drawable/truelove11</item>
+        <item>@drawable/truelove12</item>
+        <item>@drawable/truelove13</item>
+        <item>@drawable/truelove14</item>
+        <item>@drawable/truelove15</item>
+        <item>@drawable/truelove16</item>
+        <item>@drawable/truelove17</item>
+        <item>@drawable/truelove18</item>
+        <item>@drawable/truelove19</item>
+        <item>@drawable/truelove20</item>
+    </integer-array>
+
+    <integer-array name="data_chapter_clothing_bin_of_love">
+        <item>@drawable/clothing1</item>
+        <item>@drawable/clothing2</item>
+        <item>@drawable/clothing3</item>
+        <item>@drawable/clothing4</item>
+        <item>@drawable/clothing5</item>
+        <item>@drawable/clothing6</item>
+        <item>@drawable/clothing7</item>
+        <item>@drawable/clothing8</item>
+        <item>@drawable/clothing9</item>
+    </integer-array>
+
+    <integer-array name="data_chapter_meet_me_in_the_middle">
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+    </integer-array>
+
+    <integer-array name="data_chapter_couple_breaker">
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+    </integer-array>
+
+    <integer-array name="data_chapter_like_mother_like_daughter">
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+    </integer-array>
+
+    <integer-array name="data_chapter_my_lucky_strike">
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+    </integer-array>
+
+    <integer-array name="data_chapter_in_between">
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+    </integer-array>
+
+    <integer-array name="data_chapter_bad_word_baby">
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+    </integer-array>
+
+    <integer-array name="data_chapter_good_bad_fortune">
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+    </integer-array>
+
+</resources>
+
