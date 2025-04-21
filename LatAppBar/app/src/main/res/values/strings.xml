@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">LatAppBar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_activity">Ini adalah menu activity</string>
+    <string name="menu_1">Menu 1</string>
+    <string name="menu_2">Menu 2</string>
+    <string name="large_text">
+            "Visi STT Wastukancana\n\n" 
+            " Pada tahun 2027 menjadi perguruan tinggi yang unggul dalam bidang manufaktur dan jasa 
+berbasis teknologi informasi dan komunikasi pada tingkat Nasional.\n\n" 
+            "Misi STT Wastukancana\n\n" 
+            "Menyelenggarakan program pendidikan dalam bidang manufaktur dan jasa berbasis 
+teknologi informasi dan komunikasi yang dapat menyesuaikan dengan perkembangan teknologi 
+informasi dan komunikasi pada tingkat nasional.\n” 
+     “Melakukan penelitian serta pengabdian kepada masyarakat dalam bidang manufaktur dan 
+jasa berbasis teknologi informasi dan komunikasi dengan mengangkat permasalahan masyarakat 
+lokal dan nasional.\n” 
+     “Mencetak serta mengembangkan sumber daya manusia sehingga mempunyai jiwa 
+manajerial dan pengetahuan dalam bidang manufaktur dan jasa berbasis teknologi informasi dan 
+komunikasi.\n” 
+    “Menyiapkan sarana serta prasarana yang terus ditingkatan untuk mendukung dan menaikan 
+kualitas pembelajaran.\n” 
+     “Melakukan kerjasama dengan institusi pendidikan, dunia usaha dan dunia industri serta 
+lembaga profesi dan sertifikasi di level nasional dalam bidang manufaktur dan jasa berbasis teknologi 
+informasi dan komunikasi.\n” 
+        </string>
+    <string name="searchbar_hint">Masukkan kata</string>
+</resources>
