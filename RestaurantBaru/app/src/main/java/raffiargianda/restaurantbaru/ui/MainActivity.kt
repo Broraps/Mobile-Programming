@@ -5,10 +5,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -20,6 +23,7 @@ import raffiargianda.restaurantbaru.data.retrofit.ApiConfig
 import raffiargianda.restaurantbaru.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private val mainViewModel by viewModels<MainViewModel>()
 
     private lateinit var binding: ActivityMainBinding
     companion object {
@@ -28,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -40,10 +45,37 @@ class MainActivity : AppCompatActivity() {
         binding.rvReview.addItemDecoration(itemDecoration)
         findRestaurant()
 
-        binding.btnSend.setOnClickListener { view -> postReview(binding.edReview.text.toString())
-            val imm = getSystemService(Context.INPUT_METHOD_SERVICE)
-                    as InputMethodManager
+        val mainViewModel = ViewModelProvider(this,
+            ViewModelProvider.NewInstanceFactory()).get(MainViewModel::class.java)
+        mainViewModel.restaurant.observe(this) { restaurant ->
+            setRestaurantData(restaurant)
+        }
+
+        binding.btnSend.setOnClickListener { view ->
+            mainViewModel.postReview(binding.edReview.text.toString())
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(view.windowToken, 0)
+        }
+
+        mainViewModel.restaurant.observe(this, {restaurant ->
+            setRestaurantData(restaurant)
+        })
+
+        mainViewModel.listReview.observe(this) { consumerReviews ->
+            setReviewData(consumerReviews)
+        }
+        mainViewModel.isLoading.observe(this) {
+            showLoading(it)
+        }
+
+        mainViewModel.snackbarText.observe(this) {
+            it.getContentIfNotHandled()?.let { snackBarText ->
+                Snackbar.make(
+                    window.decorView.rootView,
+                    snackBarText,
+                    Snackbar.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 
