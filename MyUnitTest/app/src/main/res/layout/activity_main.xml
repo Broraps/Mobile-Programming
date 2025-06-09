@@ -73,6 +73,15 @@
             android:layout_weight="1"
             android:text="@string/calculate_surface_area"
             android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_calculate_luas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calculate_luas"
+            android:visibility="gone" />
+
     </LinearLayout>
     <TextView
         android:id="@+id/tv_result"

@@ -8,4 +8,6 @@
     <string name="height">Tinggi</string>
     <string name="length">Panjang</string>
     <string name="save">Simpan</string>
+
+    <string name = "calculate_luas">Hitung Luas</string>
 </resources>

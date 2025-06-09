@@ -5,7 +5,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.pokemong.data.response.Pokemon
-import com.example.pokemong.data.response.PokemonDetail
 import com.example.pokemong.data.response.PokemonResponse
 import com.example.pokemong.data.retrofit.ApiConfig
 import retrofit2.Call
@@ -16,9 +15,6 @@ class PokemonViewModel : ViewModel() {
 
     private val _pokemonList = MutableLiveData<List<Pokemon>>()
     val pokemonList: LiveData<List<Pokemon>> = _pokemonList
-
-    private val _pokemonDetail = MutableLiveData<PokemonDetail>()
-    val pokemonDetail: LiveData<PokemonDetail> = _pokemonDetail
 
 
     fun searchPokemon(query: String) {

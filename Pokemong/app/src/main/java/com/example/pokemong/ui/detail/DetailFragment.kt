@@ -1,11 +1,13 @@
 package com.example.pokemong.ui.detail
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.addCallback
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -32,18 +34,15 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupViewModel()
-        setupBackPressHandler()
         loadPokemonDetails()
+        setupBackPressHandler()
+
+
+        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun setupViewModel() {
         viewModel = ViewModelProvider(this).get(PokemonDetailViewModel::class.java)
-    }
-
-    private fun setupBackPressHandler() {
-        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
-            findNavController().navigateUp()
-        }
     }
 
     private fun loadPokemonDetails() {
@@ -52,6 +51,13 @@ class DetailFragment : Fragment() {
             observePokemonDetails()
         }
     }
+
+    private fun setupBackPressHandler() {
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+            findNavController().navigateUp()
+        }
+    }
+
 
     private fun observePokemonDetails() {
         viewModel.pokemonDetail.observe(viewLifecycleOwner) { detail ->
@@ -65,7 +71,7 @@ class DetailFragment : Fragment() {
             tvHeight.text = formatHeight(pokemon.height)
             tvWeight.text = formatWeight(pokemon.weight)
             tvAttack.text = getAttackStat(pokemon)
-            loadPokemonImage(pokemon.sprites.frontDefault)
+            loadPokemonImage(pokemon.sprites.other?.showdown?.frontDefault.toString())
         }
     }
 

@@ -1,10 +1,13 @@
 package raffiargianda.myunittest
 
+import android.icu.text.ListFormatter.Width
+
 class CuboidModel {
     private var width = 0.0
     private var length = 0.0
     private var height = 0.0
     fun getVolume(): Double = width * length * height
+    fun getLuas(): Double = length * width
     fun getSurfaceArea(): Double {
         val wl = width * length
         val wh = width * height

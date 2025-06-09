@@ -10,4 +10,9 @@
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/baseline_catching_pokemon_24"
         android:title="@string/title_profil" />
+
+    <item
+        android:id="@+id/navigation_bookmark"
+        android:icon="@drawable/baseline_catching_pokemon_24"
+        android:title="@string/title_bookmark" />
 </menu>

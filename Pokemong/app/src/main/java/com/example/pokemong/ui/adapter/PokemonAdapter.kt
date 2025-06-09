@@ -36,7 +36,6 @@ class PokemonAdapter(private val onItemClick: (Pokemon) -> Unit) :
             Glide.with(binding.root.context)
                 .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.url.split("/")[6]}.png")
                 .into(binding.ivPokemon)
-
             binding.root.setOnClickListener { onItemClick(pokemon) }
         }
     }

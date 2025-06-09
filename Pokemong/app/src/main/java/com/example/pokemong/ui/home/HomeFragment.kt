@@ -33,11 +33,8 @@ class HomeFragment : Fragment() {
         pokemonViewModel = ViewModelProvider(this).get(PokemonViewModel::class.java)
 
         val adapter = PokemonAdapter { pokemon ->
-            // Navigate to DetailFragment with the pokemon's name
-            val bundle = Bundle().apply {
-                putString("pokemonName", pokemon.name)
-            }
-            findNavController().navigate(R.id.action_homeFragment_to_detailFragment, bundle)
+            val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment(pokemon.name)
+            findNavController().navigate(action)
         }
 
         binding.recyclerView.layoutManager = GridLayoutManager(requireContext(),2)
@@ -47,7 +44,7 @@ class HomeFragment : Fragment() {
             adapter.submitList(pokemonList)
         }
 
-        pokemonViewModel.getPokemons(200, 0)
+        pokemonViewModel.getPokemons(100, 0)
 
         binding.searchView.setQueryHint("Search Pokémon")
         binding.searchView.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {

@@ -47,5 +47,18 @@ data class Stat(
 
 data class PokemonSprites(
     @field:SerializedName("front_default")
+    val frontDefault: String,
+
+    @field:SerializedName("other")
+    val other: Other?
+)
+
+data class Other(
+    @field:SerializedName("showdown")
+    val showdown: Showdown?
+)
+
+data class Showdown(
+    @field:SerializedName("front_default")
     val frontDefault: String
 )

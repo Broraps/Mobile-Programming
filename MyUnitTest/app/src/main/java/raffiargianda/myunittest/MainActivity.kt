@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         activityMainBinding.btnCalculateSurfaceArea.setOnClickListener(this)
         activityMainBinding.btnCalculateCircumference.setOnClickListener(this)
         activityMainBinding.btnCalculateVolume.setOnClickListener(this)
+
+        activityMainBinding.btnCalculateLuas.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -62,6 +64,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                         activityMainBinding.tvResult.text = mainViewModel.getVolume().toString()
                         gone()
                     }
+                    // Tugas
+                    R.id.btn_calculate_luas -> {
+                        activityMainBinding.tvResult.text = mainViewModel.getLuas().toString()
+                        gone()
+                    }
                 }
             }
         }
@@ -71,11 +78,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         activityMainBinding.btnCalculateCircumference.visibility = View.VISIBLE
         activityMainBinding.btnCalculateSurfaceArea.visibility = View.VISIBLE
         activityMainBinding.btnSave.visibility = View.GONE
+        activityMainBinding.btnCalculateLuas.visibility = View.VISIBLE
     }
     private fun gone() {
         activityMainBinding.btnCalculateVolume.visibility = View.GONE
         activityMainBinding.btnCalculateCircumference.visibility = View.GONE
         activityMainBinding.btnCalculateSurfaceArea.visibility = View.GONE
         activityMainBinding.btnSave.visibility = View.VISIBLE
+        activityMainBinding.btnCalculateLuas.visibility = View.GONE
     }
 }
